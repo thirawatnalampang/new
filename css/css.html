@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container .item{
+            background-color: deeppink;
+        }
+        .main-container > .item{
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .button{
+            border: 0;
+            background-color: forestgreen;
+            padding: 10px;
+        }
+        .button.active{
+            background-color: chocolate;
+        }
+        .button.danger{
+            background-color: lightsteelblue;
+        }
+        .item1 + .item2{
+            background-color: lightseagreen;
+        }
+        input[type=text]{
+            border: 1px sandybrown; 
+            height: 100px;
+        }
+    
+    </style>
+</head>
+<body>
+<!--1.item เป็นลูฏของ container-->
+<div class="container">
+    Container
+    <div class="item">
+        Item
+    </div>
+</div>
+<div class="main-container">
+    Container
+    <div class="item">
+        Item
+        <div class="item">
+            Item 1
+        </div>
+        <div class="item">
+            Item 2
+        </div>
+        <div class="item">
+            Item 3
+        </div>
+    </div>
+</div>
+
+<!--3 .มี class ติดกัน-->
+<button class="button">ปุ่ม</button>
+<button class="button active">ปุ่ม</button>
+<button class="active">ปุ่ม</button>
+<button class="button danger">ปุ่ม</button>
+
+<!--4. adjacent-->
+<div class="Item1">Item1</div>
+<div class="Item2">Item2</div>
+
+<!--5. attribut selector-->
+<input type "text" name="firstname">
+<input type "text" name="lastname">
+<input type "text" name="description">
+</body>
+</html>
